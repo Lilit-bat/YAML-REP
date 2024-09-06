@@ -1,0 +1,92 @@
+---
+title: "yamltest"
+author: "Ohanyan Lilit"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a level 1 header
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Here is also word **bold** and another word __bold1__ .
+
+Here is also word *bold2* and another word _bold3_ .
+
+here is another example for `bold4`.
+
+Here is some example R commands:
+
+```
+2+2
+mean(c(1,2,3,4,5))
+```
+Here is an example about tesq by the rule of 4 spaces **not numbered**:
+
+* Breakfast:
+    - Food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+        
+Here is an example about tesq by the rule of 4 spaces **numbered**:
+
+1. Breakfast:
+    a. Food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+        
+        
+Here is an example of **blockquote**:
+
+> This is a block quote. This 
+>paragraph has 2 lines.
+>
+> 1. This is a list inside a block quote
+> 2. Second item.
+
+        
+Here is an example of **nested blockquote**:
+
+> This is a block quote. This 
+>paragraph has 2 lines.
+>
+> > This is a list inside a block quote .
+
+Here is an example of **code in a blockquote with 5 spaces**:
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+        
+        
+Here is a link to [GOOGLE](http://google.com)
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
